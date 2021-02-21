@@ -1,0 +1,17 @@
+https://hub.docker.com/repository/docker/wegwart/ubuntu
+
+docker push wegwart/ubuntu:tagname
+
+docker build -t wegwart-ubuntu .
+
+docker run -it wegwart-ubuntu bash
+
+docker push wegwart/ubuntu:test
+
+robert@asus:~/work/wegwart-docker$ sudo docker images
+REPOSITORY       TAG       IMAGE ID       CREATED         SIZE
+wegwart-docker   latest    40b700cb1138   5 minutes ago   407MB
+
+robert@asus:~/work/wegwart-docker$ sudo docker push wegwart/ubuntu:wegwart-docker
+The push refers to repository [docker.io/wegwart/ubuntu]
+An image does not exist locally with the tag: wegwart/ubuntu
